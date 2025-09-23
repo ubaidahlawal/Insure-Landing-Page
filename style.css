@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: pink;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 130px;
+    background-color: white;
+    align-items: center;
+
+   
+}
+
+.nav_links ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav_links ul li a {
+    text-decoration: none;
+    color: hsl(256, 26%, 20%) ;
+    text-transform: uppercase;
+}
+
+#view_plans {
+    border: 1px solid hsl(256, 26%, 20%);
+    padding: 15px 20px;
+}
+
+.hero{
+    display: flex;
+    position: relative;
+    padding: 170px 160px;
+    background-color: hsl(256, 26%, 20%);
+
+}
+
+.hero_text {
+    max-width: 500px;
+    position: relative;
+    color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    gap: 30px;
+
+}
+.main_line {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 400px;
+    border: none;
+    background-color: hsl(0, 0%, 98%);
+    height: 3px;
+    border-radius: 5px;
+}
+
+.hero-text h1 {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.2;
+    white-space: nowrap;
+   margin-bottom: 20px;
+   
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    padding: 1px solid red;
+    width: 450px;
+}
+
+.hero .btn {
+    
+    text-decoration: none;
+    border: 2px solid hsl(0, 0%, 98%);;
+    padding: 12px 30px;
+    color: hsl(0, 0%, 98%);
+    white-space: nowrap;
+}
+
