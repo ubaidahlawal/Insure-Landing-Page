@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: pink;
+    background-color:white ;
 }
 
 nav {
@@ -15,6 +15,7 @@ nav {
     padding: 20px 130px;
     background-color: white;
     align-items: center;
+    z-index: 1;
 
    
 }
@@ -40,27 +41,25 @@ nav {
 .hero{
     display: flex;
     position: relative;
-    padding: 170px 160px;
+    padding: 200px 160px;
     background-color: hsl(256, 26%, 20%);
 
 }
 
 .hero_text {
-    max-width: 500px;
+    max-width: 50%;
     position: relative;
     color: hsl(0, 0%, 98%);
     display: flex;
     flex-direction: column;
     align-items: self-start;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
+    padding-top: 60px;
 
 }
 .main_line {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 400px;
+    width: 35%;
     border: none;
     background-color: hsl(0, 0%, 98%);
     height: 3px;
@@ -72,24 +71,159 @@ nav {
     font-weight: bold;
     line-height: 1.2;
     white-space: nowrap;
-   margin-bottom: 20px;
-   
+   margin-bottom: 20px; 
 }
 
 .hero p {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 30px;
-    line-height: 1.2;
+    line-height: 1.5rem;
     padding: 1px solid red;
     width: 450px;
 }
 
-.hero .btn {
+.btn {
     
     text-decoration: none;
     border: 2px solid hsl(0, 0%, 98%);;
     padding: 12px 30px;
     color: hsl(0, 0%, 98%);
-    white-space: nowrap;
+}
+
+.hero_text h1 {
+    font-size: 75px;
+
+}
+
+.image1 {
+    position: absolute;
+    top: 300px;
+    right: 150px;
+    z-index: 0;
+}
+
+.image2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.image3 {
+    position: absolute;
+    top: 700px;
+    left: 0;
+}
+
+.difference {
+   display: flex;
+   flex-direction: column;
+   margin: 270px auto 130px auto;
+   padding: 0 160px;
+   gap: 70px;
+}
+
+.different_list {
+    display: flex;
+    gap: 20px;
+}
+.different_heeading h1 {
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+.different_heeading hr {
+    width: 10%;
+}
+
+.different_item {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+    
+
+}
+
+.different_item img {
+    width: 70px;
+}
+
+.different_item  h2{
+   font-size: 25px;
+}
+
+.different_item p {
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.find {
+    background-color:hsl(256, 26%, 20%) ;
+    display: flex;
+    justify-content: space-between;
+    width: 76%;
+    margin: 0 auto 150px;
+    padding: 70px 70px;
+    align-items: center;
+    position: relative;
+
+}
+
+.find h1 {
+    font-size: 47px;
+    color: hsl(0, 0%, 98%);
+    width: 42%;
+}
+.find .btn {
+    z-index: 0;
+}
+
+.find img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+footer {
+    background-color: hsl(0, 0%, 98%) ;
+    color: #000000;
+    padding: 70px 160px;
+    position: relative;
+}
+
+.footer_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer hr {
+    border: 1px solid hsl(256, 26%, 20%);
+    margin: 40px 0;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer_links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer_items h3 {
+    margin-bottom: 20px;
+}
+
+.footer_items ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.footer-image {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
